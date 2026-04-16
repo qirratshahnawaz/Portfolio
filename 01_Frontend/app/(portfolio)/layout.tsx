@@ -45,7 +45,9 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const { data: profile } = await sanityFetch({ query: PROFILE_QUERY });
-  const fullName = profile ? `${profile.firstName} ${profile.lastName}`.toUpperCase() : "MUHAMMAD HAMZA";
+  const first = profile?.firstName || "YOUR";
+  const last = profile?.lastName || "NAME";
+  const fullName = `${first} ${last}`.toUpperCase();
 
   return (
     <html lang="en" suppressHydrationWarning>
