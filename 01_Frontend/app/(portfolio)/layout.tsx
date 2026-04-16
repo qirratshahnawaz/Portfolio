@@ -16,6 +16,13 @@ import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
 
 import { PreloaderWrapper } from "@/components/PreloaderWrapper";
 import LeafTrail from "@/components/LeafTrail";
+import { defineQuery } from "next-sanity";
+import { sanityFetch } from "@/sanity/lib/live";
+
+const PROFILE_QUERY = defineQuery(`*[_id == "singleton-profile"][0]{
+  firstName,
+  lastName
+}`);
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +44,9 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const { data: profile } = await sanityFetch({ query: PROFILE_QUERY });
+  const fullName = profile ? `${profile.firstName} ${profile.lastName}`.toUpperCase() : "MUHAMMAD HAMZA";
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body
@@ -49,7 +59,7 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <PreloaderWrapper>
+            <PreloaderWrapper name={fullName}>
               <LeafTrail />
               <Script
                 src="https://cdn.platform.openai.com/deployments/chatkit/chatkit.js"
