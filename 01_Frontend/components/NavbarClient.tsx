@@ -86,7 +86,7 @@ export function NavbarClient({ navItems }: NavbarClientProps) {
           })}
           
           <SignedIn>
-            <div className="ml-1 pl-3 border-l border-neutral-300 dark:border-neutral-700 flex items-center h-6">
+            <div className="ml-3 pl-4 border-l border-neutral-300 dark:border-neutral-700 flex items-center h-6">
               <UserButton />
             </div>
           </SignedIn>
