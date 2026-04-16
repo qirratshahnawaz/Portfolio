@@ -38,6 +38,10 @@ export async function CertificationsSection() {
     query: CERTIFICATIONS_QUERY,
   });
 
+  if (!certifications || certifications.length === 0) {
+    return null;
+  }
+
   return (
     <section id="certifications" className="py-20 px-6 bg-transparent">
       <div className="container mx-auto max-w-6xl">
