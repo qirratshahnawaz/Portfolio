@@ -1,0 +1,84 @@
+<h2>The "Bento Glass" Harmony</h2>
+<p class="subtitle">Respecting the Falling Leaves cursor animation while maximizing Hero appeal.</p>
+
+<div class="mockup">
+  <div class="mockup-header">Layout Strategy: Structure + Nature</div>
+  <div class="mockup-body">
+    <div style="position: relative; padding: 40px; background: #1c1111; border-radius: 12px; overflow: hidden; min-height: 400px;">
+      <!-- Mock Falling Leaves -->
+      <div style="position: absolute; top: 10%; left: 20%; color: #f5afaf; font-size: 20px; opacity: 0.6;">🌸</div>
+      <div style="position: absolute; top: 30%; left: 70%; color: #f5afaf; font-size: 15px; opacity: 0.4;">🌸</div>
+      <div style="position: absolute; top: 60%; left: 40%; color: #f5afaf; font-size: 18px; opacity: 0.5;">🌸</div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: auto auto; gap: 16px; position: relative; z-index: 5;">
+        <!-- Large Intro Card -->
+        <div style="grid-column: span 2; background: rgba(255,255,255,0.05); padding: 24px; border-radius: 16px; backdrop-filter: blur(10px); border: 1px solid rgba(245,175,175,0.2);">
+          <h1 style="color: #f5afaf; margin-bottom: 8px;">Muhammad Hamza</h1>
+          <p style="color: rgba(255,255,255,0.8);">I build high-performance agentic applications.</p>
+        </div>
+
+        <!-- Role Card -->
+        <div style="background: rgba(245,175,175,0.1); padding: 24px; border-radius: 16px; backdrop-filter: blur(10px); border: 1px solid rgba(245,175,175,0.2); display: flex; align-items: center; justify-content: center;">
+          <div style="text-align: center;">
+            <div style="font-size: 24px;">🤖</div>
+            <div style="font-weight: bold; color: #f5afaf;">AI Expert</div>
+          </div>
+        </div>
+
+        <!-- Social Links Card -->
+        <div style="background: rgba(255,255,255,0.05); padding: 16px; border-radius: 16px; backdrop-filter: blur(10px); border: 1px solid rgba(245,175,175,0.1);">
+           <small style="color: #f5afaf; text-transform: uppercase;">Connect</small>
+           <div style="display: flex; gap: 12px; margin-top: 8px;">
+             <span>GitHub</span> <span>LinkedIn</span>
+           </div>
+        </div>
+
+        <!-- Location/Status Card -->
+        <div style="grid-column: span 2; background: rgba(255,255,255,0.05); padding: 16px; border-radius: 16px; backdrop-filter: blur(10px); border: 1px solid rgba(245,175,175,0.1); display: flex; justify-content: space-between;">
+           <span>📍 Karachi, Pakistan</span>
+           <span style="color: #4ade80;">● Available for Work</span>
+        </div>
+      </div>
+
+      <!-- Subtle Aura -->
+      <div style="position: absolute; bottom: -50px; right: -50px; width: 200px; height: 200px; background: rgba(245,175,175,0.2); border-radius: 50%; filter: blur(50px);"></div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Why this works with your Leaf Trail:</h3>
+  <div class="pros-cons">
+    <div class="pros">
+      <h4>Pros</h4>
+      <ul>
+        <li><b>Grounding:</b> The "Bento" cards provide solid points for the eye to rest, making the falling leaves feel like a magical overlay rather than background noise.</li>
+        <li><b>Glass Effect:</b> The blurred cards (backdrop-filter) allow the leaves to pass "behind" the UI occasionally, creating amazing depth.</li>
+        <li><b>Clarity:</b> We use clean, minimal backgrounds (deep brown/black for Sakura, stone for Momiji) so the colorful leaves really pop.</li>
+      </ul>
+    </div>
+    <div class="cons">
+      <h4>Cons</h4>
+      <ul>
+        <li>Requires careful z-index management to ensure the leaves don't get "stuck" under the bento boxes unless that's intentional.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="options">
+  <div class="option" data-choice="bento-glass-full" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Full Bento Glass</h3>
+      <p>Organize everything (Bio, Socials, Status) into a structured grid.</p>
+    </div>
+  </div>
+  <div class="option" data-choice="hybrid-glass" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Hybrid Glass (Minimal)</h3>
+      <p>Keep the main text open (no card), but use bento cards for the smaller details like Socials and Location.</p>
+    </div>
+  </div>
+</div>

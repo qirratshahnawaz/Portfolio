@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+sanity
+pydantic
+httpx
+python-multipart
+python-decouple
+rich
+openai
+chatkit-py
+openai-agents[litellm]
