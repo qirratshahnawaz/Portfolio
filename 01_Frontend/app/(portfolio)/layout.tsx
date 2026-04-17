@@ -35,7 +35,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Muhammad Hamza | Full-Stack & Mobile Developer Portfolio",
+  title: "Qirrat Shahnawaz | Full-Stack & Mobile Developer",
   description: "A premium full-stack and mobile developer portfolio showcasing engineering excellence.",
 };
 
