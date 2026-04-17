@@ -112,7 +112,7 @@ export function Preloader({ onComplete, name = "MUHAMMAD HAMZA" }: { onComplete:
               <div className="flex items-center gap-2 md:gap-4 opacity-60 w-full justify-center">
                 <span className="w-8 md:w-12 h-px bg-current shrink-0" />
                 <p className="text-[10px] md:text-sm uppercase tracking-[0.2em] md:tracking-[0.6em] font-medium text-muted-foreground whitespace-nowrap">
-                  Agentic Intelligence
+                  Creative Full-Stack &amp; Mobile Engineer
                 </p>
                 <span className="w-8 md:w-12 h-px bg-current shrink-0" />
               </div>
