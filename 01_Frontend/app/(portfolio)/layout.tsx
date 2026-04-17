@@ -35,8 +35,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Muhammad Hamza | Agentic AI Portfolio",
-  description: "A premium agentic AI portfolio showcasing engineering excellence.",
+  title: "Muhammad Hamza | Full-Stack & Mobile Developer Portfolio",
+  description: "A premium full-stack and mobile developer portfolio showcasing engineering excellence.",
 };
 
 export default async function RootLayout({
